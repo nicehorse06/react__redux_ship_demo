@@ -13,13 +13,13 @@
 ### Reducer
 * 純JS，為pure function，用來計算下一個state
 * 保管state，依據給定action回傳對應state
-* 盡量讓UI和資料分離
+* 在設計state物件形狀時，盡量讓UI和資料分離
 * Reducer唯一pure function依據之前的state和一個action回傳下一個state
 	* 如`(previousState, action) => newState`
 * 因為會用到Array.reduce所以稱為Reducer
 * 預設回傳先前的state，如果有對應到回傳新的state，不要對舊的做改變
 ### store
-* 為Redux提供的方法
+* 為Redux提供的方法
 * 藉由createStore(Reducer)得到新store
 	* 每個專案只有一個store，帶入主要的Reducer
 * 藉由getState()來獲取state
@@ -36,6 +36,30 @@
 	* 每個store.subscribe(listener) 註冊的 listener 現在將會被呼叫
 	* listeners 可以呼叫 store.getState() 來取得現在的 state
 * 以上，UI即可因為store.dispatch(action)來反映新的state
+### React + Redux 分離 presentational 和 container component
+* Presentational Components
+	* 怎麼看事情（markup, styles)，如UI顯示
+	* 沒有redux邏輯
+	* 從props讀資料
+	* 描述了樣貌卻不知道資料從哪裡來，或是要如何改變它
+	* 只顯示 render 給它們的東西
+	* 如果不用Redux此部分的component可完全保留
+* Container Components
+	* 怎麼做事情 (抓資料, 更新state)
+	* 有redux邏輯
+	* 取得和改寫資料皆用redux邏輯
+	* 用來連結 presentational component 至 Redux
+		* 技術上是用store.subscribe()讀取state tree，提供props讓UI render
+		* 建議用connect()來產生Container Components增進效能優化
+	* 使用connect()需定義特別的function: `mapStateToProps`
+		* 描述如何把Redux store state轉成presentational component 的 props
+	* 使用connect()需定義特別的function: `mapDispatchToProps`
+		* 把 dispatch(action)注入 到presentational component 中當作 callback props
+	* 最後用 container 回傳 `connect(mapStateToProps, mapDispatchToProps)(presentational)`
+* 傳遞 Store 	
+	* 技術上需把Store當作props傳給每一個container
+	* 推薦使用  <Provider> 讓所有container可取得store
+	* 只需在 render 的 root component 中使用一次即可
 
 ## 參考資料
 * [Redux 中文文件](https://chentsulin.github.io/redux/index.html) 重要重要

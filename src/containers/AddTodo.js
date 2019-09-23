@@ -2,6 +2,7 @@ import React from 'react'
 import { connect } from 'react-redux'
 import { addTodo } from '../actions'
 
+// AddTodo 是一個有 "Add" 按鈕的輸入欄位
 const AddTodo = ({ dispatch }) => {
   let input
 
