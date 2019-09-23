@@ -1,5 +1,6 @@
 import { VisibilityFilters } from '../actions'
 
+// 在此Reducer過濾的state的初始值為SHOW_ALL
 const visibilityFilter = (state = VisibilityFilters.SHOW_ALL, action) => {
   switch (action.type) {
     case 'SET_VISIBILITY_FILTER':
