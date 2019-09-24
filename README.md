@@ -4,6 +4,7 @@
 
 ## todo 
 * 如加入其他測試，即可移除不必要的react-scripts
+* 增加CSS樣式
 
 ## Redux筆記
 ### state:
