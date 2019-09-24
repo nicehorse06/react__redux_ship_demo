@@ -1,5 +1,10 @@
 # Redux Todos Example
 
+[demo url](https://nicehorse06.github.io/react-redux-todo-list-demo/dist/)
+
+## todo 
+* 如加入其他測試，即可移除不必要的react-scripts
+
 ## Redux筆記
 ### state:
 * redux的state為全域使用
