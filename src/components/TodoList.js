@@ -6,7 +6,7 @@ import Todo from './Todo'
 // todos: Array 是一個有著 { id, text, completed } 形狀的 todo 項目的陣列。
 // toggleTodo(id: number) 是一個當 todo 被點擊時呼叫的 callback。
 const TodoList = ({ todos, toggleTodo }) => (
-  <ul>
+  <ul className='movie-list'>
     {todos.map(todo =>
       <Todo
         key={todo.id}
