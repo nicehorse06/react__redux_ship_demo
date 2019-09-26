@@ -1,12 +1,10 @@
-/* 页面整体 */
 body {
     margin: auto;
     max-width: 580px;
-    font-size: 14px;
+    font-size: 22px;
     font-family: Helvetica, Arial, sans-serif;
 }
 
-/* 页脚 */
 footer {
     color: #888;
     margin-top: 15px;
@@ -14,9 +12,9 @@ footer {
     padding: 10px;
 }
 
-/* 头像 */
 .avatar {
-    width: 40px;
+    width: 60px;
+    margin-left: 20px;
 }
 
 /* 电影列表 */
@@ -40,13 +38,6 @@ footer {
     background-color: #f8f9fa;
 }
 
-/* 龙猫图片 */
-.totoro {
-    display: block;
-    margin: 0 auto;
-    height: 100px;
-}
-
 nav ul {
     list-style-type: none;
     margin: 0;
@@ -67,17 +58,21 @@ nav li a:hover {
     float: right;
 }
 
-/* 覆盖某些浏览器对 input 元素定义的字体 */
+/* 覆蓋預設瀏覽器字體 */
 input[type=submit] {
     font-family: inherit;
 }
 
 input[type=text] {
     border: 1px solid #ddd;
+    width: 200px;
+    height: 22px;
+    padding: 3px 5px;
+    font-size: 20px;
 }
 
 .btn {
-    font-size: 12px;
+    font-size: 20px;
     padding: 3px 5px;
     text-decoration: none;
     cursor: pointer;
@@ -85,7 +80,7 @@ input[type=text] {
     color: black;
     border: 1px solid #555555;
     border-radius: 5px;
-    margin-left: 5px;
+    margin-left: 10px;
 }
 
 .btn:hover {
@@ -93,17 +88,6 @@ input[type=text] {
     background-color: black;
     color: white;
     border: 1px solid black;
-}
-
-.alert {
-    position: relative;
-    padding: 7px;
-    margin: 7px 0;
-    border: 1px solid transparent;
-    color: #004085;
-    background-color: #cce5ff;
-    border-color: #b8daff;
-    border-radius: 5px;
 }
 
 .inline-form {
