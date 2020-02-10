@@ -1,5 +1,4 @@
 import { connect } from 'react-redux'
-import { toggleTodo } from '../actions'
 import TodoList from '../components/TodoList'
 import { VisibilityFilters } from '../actions'
 
@@ -23,11 +22,7 @@ const mapStateToProps = state => ({
   todos: getVisibleTodos(state.todos, state.visibilityFilter)
 })
 
-// 注入dispatch(toggleTodo(id)這個動作到presentational component中
-// 點擊後觸發此callback props
-const mapDispatchToProps = dispatch => ({
-  toggleTodo: id => dispatch(toggleTodo(id))
-})
+const mapDispatchToProps = dispatch => ({})
 
 export default connect(
   mapStateToProps,
