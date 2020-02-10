@@ -11,7 +11,16 @@ const Todo = ({ completed, text }) => (
       textDecoration: completed ? 'line-through' : 'none'
     }}
   >
-    {text}
+    <tr class="notice-row2">
+      <td rowspan="2">
+        <img src="https://static.oopocket.com/store/iconTreemall@3x.png"></img>
+      </td>
+      <td>已成立</td>
+      <td colspan="2">隨機出貨</td>
+    </tr>
+    <tr class="notice-row3">
+      <td colspan="3">{text}</td>
+    </tr>
   </li>
 )
 
