@@ -1,7 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Todo from './Todo'
-import data from '../../data'
 
 // TodoList 是一個顯示可見 todos 的清單。
 // todos: Array 是一個有著 { id, text, completed } 形狀的 todo 項目的陣列。
@@ -25,12 +24,12 @@ const TodoList = ({ todos }) => (
 )
 
 // 宣告TodoList的參數型態
-TodoList.propTypes = {
-  todos: PropTypes.arrayOf(PropTypes.shape({
-    id: PropTypes.number.isRequired,
-    completed: PropTypes.bool.isRequired,
-    text: PropTypes.string.isRequired
-  }).isRequired).isRequired,
-}
+// TodoList.propTypes = {
+//   todos: PropTypes.arrayOf(PropTypes.shape({
+//     id: PropTypes.number.isRequired,
+//     completed: PropTypes.bool.isRequired,
+//     text: PropTypes.string.isRequired
+//   }).isRequired).isRequired,
+// }
 
 export default TodoList
