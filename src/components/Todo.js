@@ -3,9 +3,13 @@ import PropTypes from 'prop-types'
 
 // Todo 是單一一個 todo 項目。
 // text: string 是要顯示的文字。
-const Todo = ({ todo }) => (
+const Todo = (data) => (
   <tr>
-    <td>jimmy test</td>
+    <td>{data.name}</td>
+
+    <td>{data.logo}</td>
+    <td>{data.status.type}</td>
+    <td>{data.date}</td>
   </tr>
   // <div>
   //   <tr className="notice-row2">
