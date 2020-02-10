@@ -5,9 +5,8 @@ import PropTypes from 'prop-types'
 // text: string 是要顯示的文字。
 // completed: boolean 是 todo 是否應該顯示為被劃掉。
 // onClick() 是一個當 todo 被點擊時呼叫的 callback。
-const Todo = ({ onClick, completed, text }) => (
+const Todo = ({ completed, text }) => (
   <li
-    onClick={onClick}
     style={{
       textDecoration: completed ? 'line-through' : 'none'
     }}

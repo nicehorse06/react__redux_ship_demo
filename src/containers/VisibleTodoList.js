@@ -3,7 +3,7 @@ import TodoList from '../components/TodoList'
 import { VisibilityFilters } from '../actions'
 
 // VisibleTodoList 根據目前的顯示篩選器來篩選 todos 並 render 一個 TodoList。
-
+// 真正的filter在這裡執行
 const getVisibleTodos = (todos, filter) => {
   switch (filter) {
     case VisibilityFilters.SHOW_ALL:

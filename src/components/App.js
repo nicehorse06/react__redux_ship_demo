@@ -10,6 +10,7 @@ const App = () => (
     <Header />
     <AddTodo />
     <VisibleTodoList />
+    <VisibleTodoList />
     <Footer />
   </div>
 )

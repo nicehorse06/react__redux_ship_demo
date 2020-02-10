@@ -11,7 +11,6 @@ const TodoList = ({ todos, toggleTodo }) => (
       <Todo
         key={todo.id}
         {...todo}
-        onClick={() => toggleTodo(todo.id)}
       />
     )}
   </ul>
