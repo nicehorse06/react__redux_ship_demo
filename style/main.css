@@ -95,3 +95,28 @@ input[type=text] {
 .inline-form {
     display: inline;
 }
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+td, th {
+    border: 1px solid black;
+    text-align: left;
+    padding: 8px;
+    color: #000000;
+}
+
+
+th {
+    background-color: #dddddd;
+    white-space: nowrap;
+    text-align: center;
+}
+
+
+tr {
+    background-color: #ffffff;
+}

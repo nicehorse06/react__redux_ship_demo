@@ -1,19 +1,27 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Todo from './Todo'
+import data from '../../data'
 
 // TodoList 是一個顯示可見 todos 的清單。
 // todos: Array 是一個有著 { id, text, completed } 形狀的 todo 項目的陣列。
-// toggleTodo(id: number) 是一個當 todo 被點擊時呼叫的 callback。
-const TodoList = ({ todos, toggleTodo }) => (
-  <ul className='movie-list'>
-    {todos.map(todo =>
-      <Todo
-        key={todo.id}
-        {...todo}
-      />
-    )}
-  </ul>
+const TodoList = ({ todos }) => (
+  <table>
+    <thead className="thead-dark">
+      <tr>
+        <th colSpan="4">進行中</th>
+      </tr>
+    </thead>
+    <tbody className='movie-list'>
+      {todos.map(todo =>
+        <Todo
+          key={todo.id}
+          {...todo}
+        />
+      )}
+    </tbody>
+
+  </table>
 )
 
 // 宣告TodoList的參數型態
@@ -23,7 +31,6 @@ TodoList.propTypes = {
     completed: PropTypes.bool.isRequired,
     text: PropTypes.string.isRequired
   }).isRequired).isRequired,
-  toggleTodo: PropTypes.func.isRequired
 }
 
 export default TodoList
