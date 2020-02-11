@@ -1,7 +1,5 @@
 import React from 'react'
 import Header from './Header'
-import Footer from './Footer'
-import AddTodo from '../containers/AddTodo'
 import VisibleTodoList from '../containers/VisibleTodoList'
 import { SHIP_FILTER } from '../actions'
 
@@ -9,10 +7,8 @@ import { SHIP_FILTER } from '../actions'
 const App = () => (
   <div className='app'>
     <Header />
-    <AddTodo />
     <VisibleTodoList filter={SHIP_FILTER.SHOW_TODO} />
     <VisibleTodoList filter={SHIP_FILTER.SHOW_FINISH} />
-    <Footer />
   </div>
 )
 
