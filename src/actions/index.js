@@ -18,3 +18,14 @@ export const VisibilityFilters = {
   SHOW_TODO: 'SHOW_TODO',
   SHOW_FINISH: 'SHOW_FINISH'
 }
+
+export const SHIP_FILTER = {
+  SHOW_TODO: {
+    FILTER_CODE: 'SHOW_TODO',
+    STATUS: '進行中',
+  },
+  SHOW_FINISH: {
+    FILTER_CODE: 'SHOW_FINISH',
+    STATUS: '已完成',
+  },
+}
