@@ -22,6 +22,7 @@ const TodoList = ({ todos, status }) => (
 
   </table>
 )
+//       {todos.filter(t => t.status.code == 3).map(todo =>
 
 // 宣告TodoList的參數型態
 // TodoList.propTypes = {

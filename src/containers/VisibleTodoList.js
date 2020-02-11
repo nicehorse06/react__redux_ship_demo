@@ -8,10 +8,10 @@ const getVisibleTodos = (todos, filter) => {
   switch (filter) {
     case VisibilityFilters.SHOW_ALL:
       return todos
-    case VisibilityFilters.SHOW_COMPLETED:
-      return todos.filter(t => t.completed)
-    case VisibilityFilters.SHOW_ACTIVE:
-      return todos.filter(t => !t.completed)
+    case VisibilityFilters.SHOW_TODO:
+      return todos.filter(t => t.status.code == 1 || 2)
+    case VisibilityFilters.SHOW_FINISH:
+      return todos.filter(t => t.status.code == 3 || 4)
     default:
       throw new Error('Unknown filter: ' + filter)
   }
