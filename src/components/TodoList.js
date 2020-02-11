@@ -4,11 +4,11 @@ import Todo from './Todo'
 
 // TodoList 是一個顯示可見 todos 的清單。
 // todos: Array 是一個有著 { id, text, completed } 形狀的 todo 項目的陣列。
-const TodoList = ({ todos }) => (
+const TodoList = ({ todos, status }) => (
   <table>
     <thead className="thead-dark">
       <tr>
-        <th colSpan="4">進行中</th>
+        <th colSpan="4">{status}</th>
       </tr>
     </thead>
     <tbody className='movie-list'>

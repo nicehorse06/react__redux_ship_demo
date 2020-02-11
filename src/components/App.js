@@ -9,8 +9,8 @@ const App = () => (
   <div className='app'>
     <Header />
     <AddTodo />
-    <VisibleTodoList />
-    <VisibleTodoList />
+    <VisibleTodoList status='進行中' />
+    <VisibleTodoList status='已完成' />
     <Footer />
   </div>
 )
