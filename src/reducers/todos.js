@@ -2,25 +2,20 @@ import data from '../../data'
 
 const todos = (state = data.orders, action) => {
   switch (action.type) {
-    case 'ADD_TODO':
+    case 'ADD_SHIP_LIST':
       return [
         ...state,
         {
           id: action.id,
-          text: action.text,
-          completed: false
+          name: action.name,
+          logo: action.logo,
+          status: action.status,
+          date: action.date,
         }
       ]
     default:
       return state
   }
 }
-
-// url = 'https://nicehorse06.github.io/test_ship_data/data.json'
-
-
-
-
-
 
 export default todos

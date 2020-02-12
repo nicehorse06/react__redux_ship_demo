@@ -16,7 +16,6 @@ export const addShipList = ship_data => ({
   logo: ship_data.logo,
   status: ship_data.status,
   date: ship_data.date,
-
 })
 
 export const setVisibilityFilter = filter => ({

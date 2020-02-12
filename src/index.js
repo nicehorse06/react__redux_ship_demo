@@ -5,6 +5,7 @@ import { Provider } from 'react-redux'
 import App from './components/App'
 import rootReducer from './reducers'
 import react from '../style/main.css'
+import { addShipList } from './actions/index'
 
 // 把純JS的reducer轉成store
 const store = createStore(rootReducer)
@@ -16,3 +17,5 @@ render(
   </Provider>,
   document.getElementById('root')
 )
+
+store.dispatch(addShipList({ name: 1, logo: 2, status: 3, date: 4 }))

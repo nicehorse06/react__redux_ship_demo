@@ -13,30 +13,17 @@ const TodoList = ({ todos, filter }) => {
     todos = todos.filter(t => { return t.status.code == 1 || t.status.code == 2 })
   }
   return (
-    <div class="container">
-      <div class="Status">
-        <div class="title">
-          <div class="bar"></div>
+    <div className="container">
+      <div className="Status">
+        <div className="title">
+          <div className="bar"></div>
           <h1>{filter.STATUS}</h1>
         </div>
         {todos.map(todo => <Todo key={todo.id} {...todo} />)}
       </div>
     </div>
-
-    // <table>
-    //   <thead className="thead-dark">
-    //     <tr>
-    //       <th colSpan="4">{filter.STATUS}</th>
-    //     </tr>
-    //   </thead>
-    //   <tbody className='movie-list'>
-    //     {todos.map(todo => <Todo key={todo.id} {...todo} />)}
-    //   </tbody>
-
-    // </table>
   )
 }
-//       {todos.filter(t => t.status.code == 3).map(todo =>
 
 // 宣告TodoList的參數型態
 // TodoList.propTypes = {
