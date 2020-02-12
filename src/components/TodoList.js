@@ -13,17 +13,27 @@ const TodoList = ({ todos, filter }) => {
     todos = todos.filter(t => { return t.status.code == 1 || t.status.code == 2 })
   }
   return (
-    <table>
-      <thead className="thead-dark">
-        <tr>
-          <th colSpan="4">{filter.STATUS}</th>
-        </tr>
-      </thead>
-      <tbody className='movie-list'>
+    <div class="container">
+      <div class="Status">
+        <div class="title">
+          <div class="bar"></div>
+          <h1>{filter.STATUS}</h1>
+        </div>
         {todos.map(todo => <Todo key={todo.id} {...todo} />)}
-      </tbody>
+      </div>
+    </div>
 
-    </table>
+    // <table>
+    //   <thead className="thead-dark">
+    //     <tr>
+    //       <th colSpan="4">{filter.STATUS}</th>
+    //     </tr>
+    //   </thead>
+    //   <tbody className='movie-list'>
+    //     {todos.map(todo => <Todo key={todo.id} {...todo} />)}
+    //   </tbody>
+
+    // </table>
   )
 }
 //       {todos.filter(t => t.status.code == 3).map(todo =>

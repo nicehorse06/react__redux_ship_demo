@@ -16,7 +16,7 @@ const todos = (state = data.orders, action) => {
   }
 }
 
-url = 'https://nicehorse06.github.io/test_ship_data/data.json'
+// url = 'https://nicehorse06.github.io/test_ship_data/data.json'
 
 
 

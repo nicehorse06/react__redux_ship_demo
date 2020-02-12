@@ -4,17 +4,20 @@ import PropTypes from 'prop-types'
 // Todo 是單一一個 todo 項目。
 // text: string 是要顯示的文字。
 const Todo = (data) => (
-  <div>
-    <tr className="notice-row2">
-      <td rowSpan="2">
-        <img src={data.logo}></img>
-      </td>
-      <td>{data.status.type}</td>
-      <td colSpan="2">預計出貨：{data.date}</td>
-    </tr>
-    <tr className="notice-row3">
-      <td colSpan="3">{data.name}</td>
-    </tr>
+  <div class="order">
+    <div class="icon">
+      <img src={data.logo} alt=""></img>
+    </div>
+    <div class="text">
+      <div class="top">
+        <div class="status">{data.status.type}</div>
+        <div class="date">預計出貨：{data.date}</div>
+      </div>
+      <div class="bottom">{data.name}</div>
+    </div>
+    <div class="mark">
+      <img src="https://image.flaticon.com/icons/svg/271/271228.svg" alt="" />
+    </div>
   </div>
 )
 
