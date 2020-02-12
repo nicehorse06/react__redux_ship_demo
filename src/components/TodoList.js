@@ -1,7 +1,8 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import Todo from './Todo'
-import { VisibilityFilters } from '../actions'
+import { VisibilityFilters, addShipList } from '../actions'
+import { store } from '../index'
 
 // TodoList 是一個顯示可見 todos 的清單。
 // todos: Array 是一個有著 { id, text, completed } 形狀的 todo 項目的陣列
@@ -20,6 +21,7 @@ export default class TodoList extends Component {
     } else if (this.state.filter.FILTER_CODE === VisibilityFilters.SHOW_TODO) {
       this.state.todos = this.state.todos.filter(t => { return t.status.code == 1 || t.status.code == 2 })
     }
+    console.log(store.getState())
   }
 
   render() {
