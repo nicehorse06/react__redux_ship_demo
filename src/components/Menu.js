@@ -1,9 +1,6 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 
-// Todo 是單一一個 todo 項目。
-// text: string 是要顯示的文字。
-const Todo = (data) => (
+const Menu = (data) => (
   <div className="order">
     <div className="icon">
       <img src={data.logo} alt=""></img>
@@ -21,12 +18,4 @@ const Todo = (data) => (
   </div>
 )
 
-
-// 宣告Todo的參數型態
-// Todo.propTypes = {
-//   onClick: PropTypes.func.isRequired,
-//   completed: PropTypes.bool.isRequired,
-//   text: PropTypes.string.isRequired
-// }
-
-export default Todo
+export default Menu

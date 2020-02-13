@@ -1,9 +1,9 @@
 import { connect } from 'react-redux'
-import TodoList from '../components/TodoList'
+import MenuList from '../components/MenuList'
 import { addShipList } from '../actions'
 
 const mapStateToProps = state => ({
-  todos: state.todos
+  menus: state.menus
 })
 
 const mapDispatchToProps = dispatch => ({
@@ -13,4 +13,4 @@ const mapDispatchToProps = dispatch => ({
 export default connect(
   mapStateToProps,
   mapDispatchToProps
-)(TodoList)
+)(MenuList)

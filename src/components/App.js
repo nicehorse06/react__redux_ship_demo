@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import VisibleTodoList from '../containers/VisibleTodoList'
+import VisibleMenuList from '../containers/VisibleMenuList'
 import { SHIP_FILTER, addShipList } from '../actions'
 import { store } from '../index'
 
@@ -11,8 +11,8 @@ export default class App extends Component {
   render() {
     return (
       <div className='app'>
-        <VisibleTodoList filter={SHIP_FILTER.SHOW_TODO} />
-        <VisibleTodoList filter={SHIP_FILTER.SHOW_FINISH} />
+        <VisibleMenuList filter={SHIP_FILTER.SHOW_TODO} />
+        <VisibleMenuList filter={SHIP_FILTER.SHOW_FINISH} />
       </div>
     )
   }

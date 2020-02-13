@@ -9,12 +9,6 @@ export const addShipList = ship_data => ({
   date: ship_data.date,
 })
 
-export const VisibilityFilters = {
-  SHOW_ALL: 'SHOW_ALL',
-  SHOW_TODO: 'SHOW_TODO',
-  SHOW_FINISH: 'SHOW_FINISH'
-}
-
 export const SHIP_FILTER = {
   SHOW_TODO: {
     FILTER_CODE: 'SHOW_TODO',

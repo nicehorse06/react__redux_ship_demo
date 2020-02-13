@@ -1,4 +1,4 @@
-# Redux Todos Example
+# Ship menu demo
 
 [demo url](https://nicehorse06.github.io/react-redux-todo-list-demo/dist/)
 
