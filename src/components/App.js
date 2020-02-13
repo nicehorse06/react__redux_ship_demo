@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import Header from './Header'
 import VisibleTodoList from '../containers/VisibleTodoList'
 import { SHIP_FILTER, addShipList } from '../actions'
 import { store } from '../index'
