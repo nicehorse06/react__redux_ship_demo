@@ -7,7 +7,7 @@ import { store } from '../index'
 // App 是 render 所有事物的 root component。
 export default class App extends Component {
   componentDidMount() {
-    store.dispatch(addShipList({ name: 1, logo: 2, status: 3, date: 4 }))
+    store.dispatch(addShipList({ "name": "Jimmy", "logo": "https: //static.oopocket.com/store/iconTreemall@3x.png", "status": { "code": 3, "type": "已取消" }, "date": "107/6/12" }))
   }
   render() {
     return (

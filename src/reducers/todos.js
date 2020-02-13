@@ -9,7 +9,10 @@ const todos = (state = data.orders, action) => {
           id: action.id,
           name: action.name,
           logo: action.logo,
-          status: action.status,
+          status: {
+            code: action.status.code,
+            type: action.status.type,
+          },
           date: action.date,
         }
       ]

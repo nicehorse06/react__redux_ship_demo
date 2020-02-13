@@ -3,8 +3,8 @@
 [demo url](https://nicehorse06.github.io/react-redux-todo-list-demo/dist/)
 
 ## todo 
-* 如加入其他測試，即可移除不必要的react-scripts
-* 增加CSS樣式
+* 呼叫HTTP
+* 用 store.dispatch()更新資料 
 
 ## Redux筆記
 ### state:
