@@ -6,9 +6,7 @@ const mapStateToProps = state => ({
   menus: state.menus
 })
 
-const mapDispatchToProps = dispatch => ({
-  addShipList: menu => dispatch(addShipList(menu))
-})
+const mapDispatchToProps = dispatch => ({})
 
 export default connect(
   mapStateToProps,
