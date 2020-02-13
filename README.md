@@ -1,6 +1,6 @@
 # Ship menu demo
 
-[demo url](https://nicehorse06.github.io/react-redux-todo-list-demo/dist/)
+### [demo url](https://nicehorse06.github.io/react_redux_ship_demo/dist/index.html)
 
 ### 開發
 * webpack server執行於記憶體：
