@@ -27,7 +27,7 @@
     "react-build": "react-scripts build",
     "eject": "react-scripts eject",
     "test": "react-scripts test --env=node",
-    "dev": "webpack-dev-server --mode development --open --hot",
+    "dev": "webpack-dev-server --mode development --hot",
     "build": "webpack --mode production"
   },
   "browserslist": [

@@ -21,6 +21,8 @@ export default class TodoList extends Component {
     } else if (this.state.filter.FILTER_CODE === VisibilityFilters.SHOW_TODO) {
       this.state.todos = this.state.todos.filter(t => { return t.status.code == 1 || t.status.code == 2 })
     }
+    store.dispatch(addShipList({ "name": "Jimmy", "logo": "https: //static.oopocket.com/store/iconTreemall@3x.png", "status": { "code": 3, "type": "已取消" }, "date": "107/6/12" }))
+
     console.log(store.getState())
   }
 
