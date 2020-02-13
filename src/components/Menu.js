@@ -3,7 +3,9 @@ import React from 'react'
 const Menu = (data) => (
   <div className="order">
     <div className="icon">
-      <img src={data.logo} alt=""></img>
+      <img src={data.logo} alt="" style={{
+        filter: data.status.code <= 2 ? 'grayscale(100%)' : 'none'
+      }}></img>
     </div>
     <div className="text">
       <div className="top">

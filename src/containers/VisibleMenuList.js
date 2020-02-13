@@ -1,6 +1,5 @@
 import { connect } from 'react-redux'
 import MenuList from '../components/MenuList'
-import { addShipList } from '../actions'
 
 const mapStateToProps = state => ({
   menus: state.menus
